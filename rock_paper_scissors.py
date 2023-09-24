@@ -5,7 +5,6 @@ user_wins = 0
 computer_wins = 0
 #variable for rps
 options = ["rock", "paper", "scissors"]
-options[0]
 
 #input rock, paper, scissors (rps)
 while True:
@@ -21,5 +20,12 @@ while True:
     #generate random number for rps
     #rock: 0, paper: 1, scissors: 2
     random_number = random.randint(0, 2)
+    #index to access string from options
+    computer_pick = options[random_number]
+    print("Computer picked", computer_pick + ".")
+    #if user wins, add 1 to their score
+    if user_input == "rock" and computer_pick == "scissors":
+        print("You won!")
+        user_wins += 1
 
 print("goodbye")
