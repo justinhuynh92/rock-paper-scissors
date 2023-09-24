@@ -5,7 +5,7 @@ user_wins = 0
 computer_wins = 0
 #variable for rps
 options = ["rock", "paper", "scissors"]
-options[]
+options[0]
 
 #input rock, paper, scissors (rps)
 while True:
